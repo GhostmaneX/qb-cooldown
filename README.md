@@ -8,7 +8,7 @@
 # Callback Method
 
 ```lua
-QBCore.Functions.TriggerCallback("cad-cooldown:server:checkcooldown", function(bool)
+QBCore.Functions.TriggerCallback("gh-cooldown:server:checkcooldown", function(bool)
     if bool then      
         --> Cooldown Active <--
     else
@@ -25,7 +25,7 @@ For every robbery there will be a start point forexample: you start robbery by u
 ```lua
 -- Callback method
 RegisterNetEvent('thermite:UseThermite', function()
-    QBCore.Functions.TriggerCallback('cad-cooldown:server:checkcooldown', function(isRobbed)
+    QBCore.Functions.TriggerCallback('gh-cooldown:server:checkcooldown', function(isRobbed)
         if not isRobbed then
             print("can start robbing")
         else
