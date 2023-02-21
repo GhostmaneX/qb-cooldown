@@ -12,12 +12,12 @@ CreateThread(function()
     end
 end)
 
-RegisterServerEvent("cad-cooldown:server:coolsync")
-AddEventHandler("cad-cooldown:server:coolsync", function(bool)
+RegisterServerEvent("gh-cooldown:server:coolsync")
+AddEventHandler("gh-cooldown:server:coolsync", function(bool)
     isCooldown = bool    
 end)
 
-QBCore.Functions.CreateCallback("cad-cooldown:server:checkcooldown", function(source, cb)
+QBCore.Functions.CreateCallback("gh-cooldown:server:checkcooldown", function(source, cb)
     if isCooldown then
         cb(true)
     else
