@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
 function CheckCooldown()
-    QBCore.Functions.TriggerCallback("cad-cooldown:server:checkcooldown", function(bool)
+    QBCore.Functions.TriggerCallback("gh-cooldown:server:checkcooldown", function(bool)
         if bool then
             return false
         else
